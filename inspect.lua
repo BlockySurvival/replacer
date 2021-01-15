@@ -78,8 +78,8 @@ replacer.inspect = function(_, user, pointed_thing, mode, show_receipe)
 			end
 
 		end
-		if ref:getpos() then
-			text = text..' at '..minetest.pos_to_string(ref:getpos())
+		if ref:get_pos() then
+			text = text..' at '..minetest.pos_to_string(ref:get_pos())
 		else
 			text = text..' at an unknown location'
 		end
